@@ -1,0 +1,16 @@
+# local/editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# local lab outputs
+*.log
+tmp/
