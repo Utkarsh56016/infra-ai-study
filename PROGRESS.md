@@ -4,7 +4,7 @@
 
 **Current day:** Day 1  
 **Current topic:** Kubernetes Mental Model  
-**Status:** Not started
+**Status:** In progress
 
 ## Competency scale
 
@@ -21,7 +21,7 @@ Target:
 
 | Date | Topic | What I built | What I broke/debugged | Confidence | Next |
 |---|---|---|---|---|---|
-| — | — | — | — | — | Start Day 1 |
+| 2026-08-26 | Kubernetes Mental Model | — | — | — | Build the Day 1 control-flow mental model and run the lab |
 
 ## Skill gaps
 
