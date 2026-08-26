@@ -307,13 +307,49 @@ Do not blindly overwrite repository state.
 
 ---
 
-## 13. Final Principle
+## 13. Local Codex + GSD Build Workflow
+
+The local repository checkout is the execution workspace for Codex.
+
+Before a new Codex session on a clean checkout:
+
+```bash
+git status --short
+git pull --ff-only
+```
+
+If local changes exist, inspect and reconcile them before pulling or overwriting anything.
+
+Codex should start from root `AGENTS.md`, then read the current tracker and relevant `project-config/` documents.
+
+For all non-trivial implementation/build work, use GSD Core:
+
+```text
+Discuss → Plan → Execute → Verify → Ship
+```
+
+The GSD workflow applies to implementation quality and delivery. The study workflow still controls whether a roadmap concept is actually understood and complete.
+
+Do not manually fabricate GSD `.planning/` state. Install/onboard GSD through its runtime-aware installer and let the framework manage its planning artifacts.
+
+See:
+
+- `AGENTS.md`
+- `project-config/GSD_README.md`
+- `project-config/07_GSD_CODEX_WORKFLOW.md`
+- `project-config/SOURCE_SYNC_POLICY.md`
+
+---
+
+## 14. Final Principle
 
 ChatGPT teaches and coordinates.
 
 Utkarsh runs real experiments and develops the understanding.
 
-GitHub records the evidence.
+Codex implements non-trivial build work through GSD.
+
+GitHub records the evidence and verified state.
 
 The objective is a repository that demonstrates increasing ability to:
 
