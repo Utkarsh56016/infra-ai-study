@@ -57,6 +57,24 @@ Conclusions are separated into:
 - Hypothesis
 - Unknown
 
+## Codex build workflow
+
+Repository-local Codex context starts at `AGENTS.md`.
+
+For non-trivial implementation/build tasks, this project uses **GSD Core**:
+
+```text
+Discuss → Plan → Execute → Verify → Ship
+```
+
+The study loop and GSD loop are separate gates: GSD verifies the implementation; study completion verifies understanding, debugging ability, teach-back, quiz performance, and roadmap exit criteria.
+
+See:
+
+- `AGENTS.md`
+- `project-config/07_GSD_CODEX_WORKFLOW.md`
+- `project-config/GSD_README.md`
+
 ## Progress
 
 | Day | Topic | Status | Artifact |
@@ -76,10 +94,21 @@ Conclusions are separated into:
 
 ```text
 infra-ai-study/
+├── AGENTS.md
 ├── README.md
 ├── PROGRESS.md
 ├── roadmap/
 │   └── LFX_10_DAY_ROADMAP.md
+├── project-config/
+│   ├── 00_PROJECT_CONTEXT.md
+│   ├── 01_STUDY_OPERATING_SYSTEM.md
+│   ├── 03_JOB_TARGET_SKILL_MATRIX.md
+│   ├── 04_PROJECT_CUSTOM_INSTRUCTIONS.md
+│   ├── 05_SOURCE_INDEX.md
+│   ├── 06_GITHUB_STUDY_WORKFLOW.md
+│   ├── 07_GSD_CODEX_WORKFLOW.md
+│   ├── GSD_README.md
+│   └── SOURCE_SYNC_POLICY.md
 ├── days/
 │   ├── day-01-kubernetes-mental-model/
 │   ├── day-02-container-runtime-path/
