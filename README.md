@@ -79,7 +79,7 @@ See:
 
 | Day | Topic | Status | Artifact |
 |---|---|---|---|
-| 1 | Kubernetes Mental Model | Not started | — |
+| 1 | Kubernetes Mental Model | In progress | — |
 | 2 | Container Runtime Path | Not started | — |
 | 3 | Linux Process Internals | Not started | — |
 | 4 | NVIDIA GPU Stack | Not started | — |
