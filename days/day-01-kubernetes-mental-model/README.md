@@ -2,8 +2,8 @@
 
 ## Status
 
-**State:** Not started  
-**Started:** —  
+**State:** In progress  
+**Started:** 2026-08-26  
 **Completed:** —  
 **Confidence:** — / 5
 
