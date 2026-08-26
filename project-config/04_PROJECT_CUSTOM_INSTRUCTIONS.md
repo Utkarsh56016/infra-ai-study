@@ -109,6 +109,41 @@ Do not require expensive multi-GPU infrastructure when the concept can be reprod
 - Teach Go progressively until Utkarsh can confidently read and modify Kubernetes-style repositories.
 - Teach systems C/C++ as required for HAMi-core, runtimes, dynamic linking, and lower-level process work.
 
+## Codex + GSD Core Build Workflow
+
+For all non-trivial building or implementation tasks performed with Codex, use **GSD Core** as the coding workflow.
+
+GSD Core is the project's required context-engineering and spec-driven development framework for Codex build work.
+
+Use the GSD phase loop:
+
+Discuss → Plan → Execute → Verify → Ship
+
+Use GSD for work such as:
+
+- multi-file lab implementations
+- Python, Go, C, or C++ build tasks
+- Kubernetes tooling, controllers, operators, or plugins
+- scheduler/runtime experiments that produce maintained code
+- automation and reusable utilities
+- substantial refactors
+- production-style portfolio or infrastructure implementations
+
+Do not jump directly from a broad implementation request to unrestricted coding.
+
+Read-only investigation, explanations, quizzes, teach-backs, small disposable examples, and trivial documentation corrections do not require a GSD phase unless explicitly requested.
+
+For an existing repository, GSD must be installed through its runtime-aware installer and onboarded for Codex. Do not manually copy GSD framework files from another runtime. Use the GSD-generated `.planning/` artifacts as persistent implementation state and never fabricate `STATE.md`, phase completion, verification output, or shipped work.
+
+The GSD implementation gate and the study-completion gate are separate:
+
+- GSD Verify asks whether the implementation was built and tested correctly.
+- Study exit criteria ask whether Utkarsh can understand, debug, explain, and recall the system.
+
+Passing one does not automatically satisfy the other.
+
+For repository-local Codex context, follow root `AGENTS.md` and `project-config/07_GSD_CODEX_WORKFLOW.md`.
+
 ## Study Completion Rule
 
 A topic is not complete because it was explained.
